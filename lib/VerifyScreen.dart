@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 class VerifyScreen extends StatefulWidget {
   const VerifyScreen({Key? key}) : super(key: key);
 
@@ -221,10 +220,6 @@ Widget build(BuildContext context) {
                 ],
               ),
             ),
-
-
-
-
           ],
 
 

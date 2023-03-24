@@ -1,18 +1,17 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get/instance_manager.dart';
-import 'package:get/route_manager.dart';
-import 'package:usnap/WelcomeScreen.dart';
-import 'package:get/get.dart';
 
-class SignupScreen extends StatefulWidget {
-  const SignupScreen({Key? key}) : super(key: key);
-
-  @override
-  State<SignupScreen> createState() => _SignupScreenState();
+void main() {
+  runApp(const MyApp());
 }
 
-class _SignupScreenState extends State<SignupScreen> with SingleTickerProviderStateMixin
+class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin
 {
   late AnimationController _controller;
 
@@ -208,9 +207,7 @@ class _SignupScreenState extends State<SignupScreen> with SingleTickerProviderSt
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 55),
                         child: MaterialButton(
-                          onPressed: () {
-                            Get.to(WelcomeScreen());
-                          },
+                          onPressed: () {},
                           child: Text('login'),
                           color: Colors.lightBlue,
                           textColor: Colors.white,
@@ -245,7 +242,7 @@ class _SignupScreenState extends State<SignupScreen> with SingleTickerProviderSt
                         children: [
                           Text(" Already have an account? "),
                           TextButton(onPressed: (){}, child: const Text(
-                            "Sign in",
+                            "Sign up",
                             style: TextStyle(
                                 color: Colors.blue,
                                 fontWeight: FontWeight.bold
